@@ -1,0 +1,27 @@
+// Colors
+$orange: #e45028;
+$yellow: #f9b43b;
+$black: #2f3234;
+$black_deep:#1f2122;
+$red: #e35028;
+// Normalize
+@import "_misk/normalize.scss";
+// Setups
+@import "_misk/mixins";
+@import "_misk/fonts";
+@import "_misk/layout";
+// Blocks
+@import "blocks/hero";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/button";
+@import "blocks/title";
+@import "blocks/best";
+@import "blocks/menu";
+@import "blocks/burgers";
+@import "blocks/team";
+@import "blocks/reviews";
+@import "blocks/work";
+@import "blocks/delivery";
+@import "blocks/form";
+@import "blocks/footer";

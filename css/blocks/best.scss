@@ -1,0 +1,21 @@
+.best {
+    background: url('../img/bg/best_bg.jpg') center center / cover no-repeat;
+}
+
+.best__list {
+    display: flex;
+}
+
+.best__item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.best__title{
+    font-family: Lifehack-medium;
+    font-size: 24px;
+}
+.best__desc{
+    text-align: center;
+}

@@ -1,0 +1,119 @@
+.form {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.form__block-row {
+    width: 50%;
+}
+
+.form__row {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.form__block {
+    flex: 1;
+    margin-right: 20px;
+    &-title {
+        margin-bottom: 6px;
+    }
+}
+
+.form__input,
+.form__block-textarea {
+    width: 100%;
+    border-radius: 10px;
+    padding: 8px 18px;
+    border: solid 2px #fff;
+    &:focus {
+        outline: none;
+        border-color: $yellow;
+    }
+}
+
+.form__block-textarea {
+    flex: 1;
+    min-height: 110px;
+    resize: vertical;
+}
+
+// _____ Form__radio _____
+.form__radio {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.radio__input {
+    display: none;
+}
+
+.radio__input-fake {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 10px;
+    position: relative;
+    &::after {
+        content: "";
+        display: block;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: $orange;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+}
+
+.radio__input:checked~.radio__input-fake:after {
+    opacity: 1;
+}
+
+// _____ checkbox _____
+.form__checkbox {
+    display: flex;
+}
+
+.form__checkbox-input {
+    display: none;
+}
+
+.form__checkbox-fake {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    position: relative;
+    margin-right: 10px;
+    &::after {
+        content: "";
+        width: 13px;
+        height: 13px;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: url('/img/icons/flag_checkbox.svg') no-repeat;
+        opacity: 0;
+    }
+}
+
+.form__checkbox-input:checked~.form__checkbox-fake:after {
+    opacity: 1;
+}
+
+// _____ button _____
+.form__row .btn--red {
+    margin-right: 20px;
+}

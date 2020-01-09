@@ -1,0 +1,32 @@
+.btn {
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: $black;
+    font-size: 13px;
+    &:hover {
+        background: $black_deep;
+    }
+}
+
+.btn--red {
+    background: $red;
+}
+
+.button__reset {
+    outline: initial;
+    border: initial;
+    background: initial;
+    color: #fff;
+    //   &:active, &:hover {
+    //     border-radius: 5px;
+    //     padding: 10px 15px;
+    //     color: #fff;
+    //     text-decoration: none;
+    //     text-transform: uppercase;
+    //     background: $red;
+    //     font-size: 13px;
+    //   }
+}
