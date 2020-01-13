@@ -1,3 +1,37 @@
 .burgers {
-    background: linear-gradient(180deg, rgb(249,180,59) 0%, rgb(235,140,56) 48%, rgb(249,180,59) 74%);
+    background: linear-gradient(180deg, rgb(249, 180, 59) 0%, rgb(235, 140, 56) 48%, rgb(249, 180, 59) 74%);
+}
+
+.container__burgers {
+    position: relative;
+}
+
+.burgers__block {
+    display: flex;
+    align-items: center;
+}
+
+.burgers__desc-text {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 37px;
+}
+
+.burgers__desc-price {
+    display: flex;
+    align-items: flex-end;
+}
+
+.price__cost {
+    font-family: Gagalin-Regular, sans-serif;
+    font-size: 72px;
+    color: $red;
+    line-height: .9;
+    margin-right: 30px;
+    display: flex;
+    align-items: flex-end;
+    p {
+        font-size: 30px;
+        margin-left: 10px;
+    }
 }

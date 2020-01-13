@@ -1,11 +1,17 @@
-.title{
-    font-family: Gagalin-Regular;
+.title {
+    font-family: Gagalin-Regular, sans-serif;
     color: $yellow;
     font-size: 72px;
     margin-bottom: 20px;
     text-align: center;
-    
-    &--color-black{
+    &--color-black {
         color: $black;
     }
-} 
+}
+
+.burgers__desc-title {
+    color: white;
+    line-height: .9;
+    text-align: left;
+    margin-bottom: 35px;
+}

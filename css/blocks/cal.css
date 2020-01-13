@@ -1,0 +1,7 @@
+.cal__icon {
+  width: 60px;
+  height: 60px;
+  background: url("/img/icons/kkal.svg") center center/cover no-repeat; }
+
+.cal__text {
+  font-family: Gagalin-Regular, sans-serif; }

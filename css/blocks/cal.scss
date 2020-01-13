@@ -1,0 +1,32 @@
+.cal__block {
+    width: 60px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: .7;
+}
+
+.cal__icon {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    background: url('/img/icons/kkal.svg') center center / cover no-repeat;
+}
+
+.cal__icon-text {
+    color: white;
+    line-height: .8;
+    font-size: 20px;
+    position: absolute;
+    top: 65%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    font-family: Gagalin-Regular, sans-serif;
+}
+
+.cal__text {
+    color: white;
+    font-size: 14px;
+    font-family: Gagalin-Regular, sans-serif;
+}

@@ -1,0 +1,103 @@
+.structure {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    display: flex;
+}
+
+// _____ Structure__button _____
+.structure__button {
+    width: 90px;
+    height: 90px;
+    background: $red;
+    border-radius: 5px;
+    position: relative;
+    transition: .6s;
+    &:hover {
+        background: $hover;
+    }
+    &:active~.structure__block {
+        display: block;
+    }
+}
+
+.structure__button-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.structure__button-pic {
+    width: 47px;
+    height: 44px;
+    background: url('/img/icons/burger.svg') center center / cover no-repeat;
+    margin-bottom: 5px;
+}
+
+.structure__button-text {
+    font-family: Gagalin-Regular, sans-serif;
+    font-size: 14px;
+    color: white;
+    line-height: .8;
+}
+
+// _____ Structure__block _____
+.structure__block {
+    padding: 20px;
+    background: rgba(#fff, .9);
+    border-radius: 5px;
+    display: none;
+}
+
+.structure__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.structure__item-icon {
+    width: 46px;
+    height: 42px;
+    margin-right: 20px;
+    &.beef {
+        background: url('/img/icons/beef.svg') center center / cover no-repeat;
+    }
+    &.buns {
+        width: 50px;
+        height: 32px;
+        background: url('/img/icons/buns.svg') center center / cover no-repeat;
+    }
+    &.salad {
+        width: 40px;
+        height: 40px;
+        background: url('/img/icons/salad.svg') center center / cover no-repeat;
+    }
+    &.sauce {
+        width: 42px;
+        height: 44px;
+        background: url('/img/icons/sauce.svg') center center / cover no-repeat;
+    }
+    &.cucumber {
+        width: 45px;
+        height: 40px;
+        background: url('/img/icons/cucumber.svg') center center / cover no-repeat;
+    }
+    &.cheese {
+        width: 40px;
+        height: 38px;
+        background: url('/img/icons/cheese.svg') center center / cover no-repeat;
+    }
+}
+
+.structure__item-title {
+    margin-right: 20px;
+    font-family: Ubuntu-B, sans-serif;
+}
+
+.structure__item-weight {
+    text-align: right;
+}
