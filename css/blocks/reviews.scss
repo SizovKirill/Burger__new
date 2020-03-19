@@ -1,4 +1,5 @@
 .reviews {
+    position: relative;
     background: $black;
 }
 
@@ -14,6 +15,10 @@
     filter: grayscale(100%);
     background: center center / cover no-repeat;
     position: relative;
+    @include tablets {
+        width: 50%;
+        height: 25%;
+    }
     &:hover {
         .reviews__hover-block {
             opacity: 1;
@@ -34,9 +39,14 @@
     transform: scale(.8);
     transition: .5s;
     color: #fff;
-    padding: 20px;
+    padding: rem(20px);
 }
 
-.reviews__text {
-    margin-bottom: 17px;
+.reviews {
+    &__title {
+        font-family: Gagalin-Regular, sans-serif;
+    }
+    &__text {
+        margin-bottom: rem(17px);
+    }
 }

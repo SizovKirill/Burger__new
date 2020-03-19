@@ -1,10 +1,12 @@
 .nav {
-    margin-right: 15px;
+    margin-right: rem(15px);
+    @include tablets {
+        display: none;
+    }
 }
+
 .nav__list {
     display: flex;
-    
-
 }
 
 .nav__item:last-child .nav__link:after {
@@ -14,18 +16,17 @@
 .nav__link {
     color: #fff;
     text-decoration: none;
-    font-size: 13px;
+    font-size: rem(13px);
     text-transform: uppercase;
     display: flex;
     align-items: center;
     &:after {
         content: "";
-        width: 4px;
-        height: 4px;
+        width: rem(4px);
+        height: rem(4px);
         display: block;
         border-radius: 50%;
         background: #fff;
-        margin: 0 15px;
+        margin: 0 rem(15px);
     }
 }
-

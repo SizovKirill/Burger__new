@@ -1,16 +1,16 @@
 .structure {
     position: absolute;
-    top: 90px;
+    top: 0;
     left: 0;
     display: flex;
 }
 
 // _____ Structure__button _____
 .structure__button {
-    width: 90px;
-    height: 90px;
+    width: rem(90px);
+    height: rem(90px);
     background: $red;
-    border-radius: 5px;
+    border-radius: rem(5px);
     position: relative;
     transition: .6s;
     &:hover {
@@ -32,69 +32,69 @@
 }
 
 .structure__button-pic {
-    width: 47px;
-    height: 44px;
+    width: rem(47px);
+    height: rem(44px);
     background: url('/img/icons/burger.svg') center center / cover no-repeat;
-    margin-bottom: 5px;
+    margin-bottom: rem(5px);
 }
 
 .structure__button-text {
     font-family: Gagalin-Regular, sans-serif;
-    font-size: 14px;
+    font-size: rem(14px);
     color: white;
     line-height: .8;
 }
 
 // _____ Structure__block _____
 .structure__block {
-    padding: 20px;
+    padding: rem(20px);
     background: rgba(#fff, .9);
-    border-radius: 5px;
+    border-radius: rem(5px);
     display: none;
 }
 
 .structure__item {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: rem(15px);
 }
 
 .structure__item-icon {
-    width: 46px;
-    height: 42px;
-    margin-right: 20px;
+    width: rem(46px);
+    height: rem(42px);
+    margin-right: rem(20px);
     &.beef {
         background: url('/img/icons/beef.svg') center center / cover no-repeat;
     }
     &.buns {
-        width: 50px;
-        height: 32px;
+        width: rem(50px);
+        height: rem(32px);
         background: url('/img/icons/buns.svg') center center / cover no-repeat;
     }
     &.salad {
-        width: 40px;
-        height: 40px;
+        width: rem(40px);
+        height: rem(40px);
         background: url('/img/icons/salad.svg') center center / cover no-repeat;
     }
     &.sauce {
-        width: 42px;
-        height: 44px;
+        width: rem(42px);
+        height: rem(44px);
         background: url('/img/icons/sauce.svg') center center / cover no-repeat;
     }
     &.cucumber {
-        width: 45px;
-        height: 40px;
+        width: rem(45px);
+        height: rem(40px);
         background: url('/img/icons/cucumber.svg') center center / cover no-repeat;
     }
     &.cheese {
-        width: 40px;
-        height: 38px;
+        width: rem(40px);
+        height: rem(38px);
         background: url('/img/icons/cheese.svg') center center / cover no-repeat;
     }
 }
 
 .structure__item-title {
-    margin-right: 20px;
+    margin-right: rem(20px);
     font-family: Ubuntu-B, sans-serif;
 }
 

@@ -1,5 +1,78 @@
 .menu {
-    // height: 100%;
     background: url('../img/bg/menu_bg.jpg') center center / cover no-repeat;
+    position: relative;
 }
-    
+
+.menu__title {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    color: white;
+}
+
+.menu__container {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.menu__accord {
+    width: 75%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.accord__item {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.accord__item-link {
+    width: rem(80px);
+    display: block;
+    height: 100%;
+    position: relative;
+    text-decoration: none;
+    &.beef {
+        background: url('/img/menu/bg_beef.jpg') center center / cover no-repeat;
+    }
+    &.vegan {
+        background: url('/img/menu/bg_vegan.jpg') center center / cover no-repeat;
+    }
+    &.diet {
+        background: url('/img/menu/bg_diet.jpg') center center / cover no-repeat;
+    }
+}
+
+.accord__item-title {
+    text-align: center;
+    white-space: nowrap;
+    position: absolute;
+    transform: rotate(-90deg) translateY(-50%);
+    transform-origin: 0 0;
+    left: 50%;
+    top: 100%;
+    margin-top: rem(-20px);
+    font-size: rem(40px);
+    font-family: Gagalin-Regular, sans-serif;
+    color: white;
+}
+
+.accord__item-desc {
+    width: 100%;
+    background-color: rgba(#000, .5);
+    color: white;
+    padding: rem(60px) rem(30px);
+    font-size: rem(14px);
+    line-height: 1.8;
+    display: none;
+    &.active {
+        display: block;
+    }
+}

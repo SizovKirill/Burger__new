@@ -1,9 +1,15 @@
 .best {
     background: url('../img/bg/best_bg.jpg') center center / cover no-repeat;
+    @include tablets {
+        background: url('../img/bg/best_bg_tablets.jpg') center center / cover no-repeat;
+    }
 }
 
 .best__list {
     display: flex;
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .best__item {
@@ -11,11 +17,33 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include phones {
+        margin-bottom: 20px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
-.best__title{
+
+.best__img {
+    img {
+        display: block;
+        width: 100%;
+        // height: 100%;
+    }
+    @include phones {
+        width: 27%;
+    }
+}
+
+.best__title {
     font-family: Lifehack-medium;
-    font-size: 24px;
+    font-size: rem(24px);
 }
-.best__desc{
+
+.best__desc {
     text-align: center;
+    @include phones {
+        width: 70%;
+        text-align: left;
+    }
 }

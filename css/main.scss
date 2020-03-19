@@ -5,15 +5,20 @@ $black: #2f3234;
 $black_deep:#1f2122;
 $red: #e35028;
 $hover:#c1401e;
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
 // Normalize
 @import "_misk/normalize.scss";
 // Setups
 @import "_misk/mixins";
 @import "_misk/fonts";
 @import "_misk/layout";
+@import "_misk/media";
 // Blocks
 @import "blocks/hero";
 @import "blocks/header";
+@import "blocks/menu__gamburger";
 @import "blocks/nav";
 @import "blocks/button";
 @import "blocks/title";
@@ -21,10 +26,14 @@ $hover:#c1401e;
 @import "blocks/menu";
 @import "blocks/burgers";
 @import "blocks/structure";
-@import "blocks/cal.scss";
+@import "blocks/cal";
 @import "blocks/team";
 @import "blocks/reviews";
 @import "blocks/work";
 @import "blocks/delivery";
 @import "blocks/form";
+@import "blocks/fixed__menu";
+@import "blocks/overlay__menu";
+@import "blocks/modal__mail";
+@import "blocks/modal__reviews";
 @import "blocks/footer";

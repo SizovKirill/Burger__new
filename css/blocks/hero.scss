@@ -1,19 +1,87 @@
 .hero {
+    position: relative;
     width: 100%;
-    background: url(../img//bg/hero_bg.jpg) center center / cover no-repeat;
+    background: url('../img/bg/hero_bg.jpg') center center / cover no-repeat;
+}
+
+.hero__title {
+    text-align: left;
+    @include tablets {
+        font-size: rem(72px);
+    }
+    @include phones {
+        font-size: 65px;
+    }
 }
 
 .hero__desc {
     font-family: Lifehack-Medium;
     color: #fff;
-    font-size: 65px;
+    font-size: rem(65px);
+    @include tablets {
+        // text-align: center;
+        line-height: 1.3;
+        font-size: rem(65px);
+    }
+    @include phones {
+        font-size: 45px;
+    }
 }
 
-.hero__content{
+.hero__content {
     display: flex;
     align-items: center;
+    @include tablets {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 12%;
+    }
+    @include phones {
+        padding: 0 5%;
+    }
+}
+
+.hero__picture {
+    width: 50%;
+    margin-right: rem(20px);
+    @include tablets {
+        width: 90%;
+        margin-right: initial;
+        display: flex;
+        justify-content: center;
+        margin-bottom: rem(50px);
+    }
+}
+
+.hero__berger-img {
+    width: 100%;
+}
+
+.hero__text {
+    width: 50%;
+    @include tablets {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .hero__container {
-    flex: .75;
+    flex: 1;
+    height: 100%;
+    display: flex;
+    @include tablets {
+        justify-content: center;
+    }
+}
+
+// arrow_to_next_section
+.to-next-section {
+    width: 30px;
+    height: 17px;
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    cursor: pointer;
 }

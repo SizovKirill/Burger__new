@@ -1,3 +1,103 @@
 .work {
-  background: url('../img/bg/work_bg.jpg') center center / cover no-repeat;
+    background: url('../img/bg/work_bg.jpg') center center / cover no-repeat;
+}
+
+// _____ Player _____
+.player {
+    margin: 0 auto;
+    &.hidden {
+        display: none;
+    }
+}
+
+.player__wrapper {
+    position: relative;
+    &.active {
+        .player__splash {
+            display: none;
+        }
+    }
+}
+
+#yt-player {
+    display: block;
+}
+
+.player__splash {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/img/bg/Player_bg.png')center center /cover no-repeat;
+}
+
+.player__controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: rem(660px);
+    height: rem(35px);
+    background-color: #3e3e3e;
+    padding: rem(5px) rem(20px);
+}
+
+.player__start {
+    cursor: pointer;
+    display: block;
+    width: rem(19px);
+    height: rem(25px);
+    background: url('/img/icons/play_gray.png')center center / cover no-repeat;
+}
+
+.player__duration {
+    display: flex;
+    color: #626262;
+    // &:before {
+    //     content: "";
+    //     display: block;
+    //     width: 20px;
+    //     height: 23px;
+    //     background: url('/img/icons/volum_gray.png')center center /cover no-repeat;
+    // }
+}
+
+.player__duration-complited:after {
+    content: ":";
+    margin: 0 rem(10px);
+}
+
+.paused {
+    padding: 0;
+    width: rem(6px);
+    height: rem(25px);
+    background: #626262;
+    &:after {
+        content: "";
+        display: inline-block;
+        width: rem(6px);
+        height: rem(25px);
+        background: #626262;
+        margin-left: rem(10px);
+    }
+}
+
+.player__playback {
+    position: relative;
+    width: rem(445px);
+    height: rem(4px);
+    background-color: #626262;
+}
+
+.player__playback-button {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: rem(13px);
+    height: rem(13px);
+    border-radius: 50%;
+    background-color: #626262;
 }

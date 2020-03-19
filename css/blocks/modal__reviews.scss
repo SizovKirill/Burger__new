@@ -1,0 +1,55 @@
+.modal__reviews {
+    // opacity: 0;
+    height: 100vh;
+    // display: flex; !!!
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: rem(15px) 3%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(31, 33, 34, .8);
+    &-block {
+        position: relative;
+        width: 50%;
+        padding: rem(20px);
+        background-color: white;
+        border-radius: rem(5px);
+    }
+    &-title {
+        margin-bottom: rem(20px);
+        font-family: Gagalin-Regular, sans-serif;
+    }
+    &-close {
+        width: rem(16px);
+        height: rem(16px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: rem(15px);
+        right: rem(15px);
+        &-elem {
+            top: 50%;
+            left: 0;
+            width: rem(16px);
+            height: rem(3px);
+            border-radius: rem(5px);
+            background-color: $orange;
+            transform: rotate(45deg);
+            &:after {
+                content: "";
+                display: block;
+                width: rem(16px);
+                height: rem(3px);
+                border-radius: rem(5px);
+                background-color: $orange;
+                transform: rotate(-90deg);
+            }
+        }
+    }
+}
