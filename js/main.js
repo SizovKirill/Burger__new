@@ -343,10 +343,10 @@ $(".player__start").on('click', e => {
 
     if (playerStatus != 1) {
         player.playVideo();
-        // $('.player__start').addClass('paused')
+
     } else {
         player.pauseVideo();
-        // $('.player__start').removeClass('paused')
+
     }
 });
 
